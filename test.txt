@@ -1,6 +1,6 @@
-﻿海强 编辑
-take
-幅度萨芬
-ads
-阿斯顿
-fsafd
+﻿from openpyxl import Workbook
+a = input("请输入月份")
+wb = Workbook()
+sheet = wb.create_sheet('Data',0)
+sheet['A1'] = a
+wb.save('D:\\example11.xlsx')
